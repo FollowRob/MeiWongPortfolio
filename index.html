@@ -75,6 +75,15 @@
           </p>
           <!-- mb-5 gives extra margin spacing under lead text -->
           <p class="lead mb-5">Let's create something amazing together!</p>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Subscribe
+          </button>
         </div>
       </section>
     </header>
@@ -241,7 +250,6 @@
             </p>
           </div>
           <div class="col-12 col-md-10 col-lg-8">
-
             <!-- Add form here -->
             <form class="row g-3 mb-4">
               <div class="col-md-4">
@@ -250,29 +258,68 @@
               </div>
               <div class="col-md-4">
                 <label for="phone" class="form-label">Password</label>
+                <input class="form-control" id="inputphone" />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
                 <input
+                  type="email"
                   class="form-control"
-                  id="inputphone"
+                  id="exampleFormControlInput1"
                 />
               </div>
-                <div class="col-md-4 mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                 <input type="email" class="form-control" id="exampleFormControlInput1">
-             </div>
-                <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
- 
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Sign in</button>
               </div>
             </form>
             <!-- Form End -->
-
           </div>
         </div>
       </footer>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+        Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your inbox. 
+        </p>
+
+        <!-- Form inside modal -->
+      <form class="row g-3 mb-4">
+        <div class="col-sm-12 col-md-6">
+                <label for="inputname" class="form-label">Name</label>
+                <input type="name" class="form-control" id="inputname" />
+              </div>
+        <div class="col-sm-12 col-md-6">
+                <label for="inputname" class="form-label">Email</label>
+                <input type="name" class="form-control" id="inputname" />
+              </div>
+      <div class="col-12 mb-4">
+        <button type="submit" class="btn btn-primary">Sign up!</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
     </main>
 
     <!-- Bootstrap JS Script-->
