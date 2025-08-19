@@ -30,6 +30,19 @@ h2 {
   background-color: #dbdcde;
 }
 
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
 /* contact */
 #contact {
   background-color: white;
@@ -38,10 +51,17 @@ h2 {
 /* hero */
 
 #hero {
-background-image: url(');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    background-color: lightgray;
+    background-image: url(../images/background.webp);
+    background-size: cover;
+    background-position: 50% 70%;
+    min-height: 500px;
+    padding: 5% 7% ;
+}
+/* media query */
+/* bootstrap breakpoint for xl screens */
+@media screen and (min-width: 1200px) {
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
